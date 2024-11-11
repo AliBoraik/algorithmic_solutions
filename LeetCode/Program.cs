@@ -3,7 +3,7 @@
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new ContainerWithMostWater();
+var r = new IntersectionTwoArrays();
 
-Console.WriteLine(r.MaxArea([1,8,6,2,5,4,8,3,7]));
+Console.WriteLine(r.Intersection([1,2,2,1],  [2,2]));
 
