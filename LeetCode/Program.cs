@@ -3,7 +3,7 @@
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new FindMajorityElement();
+var r = new MaximumAverageSubarrayI();
 
-Console.WriteLine(r.MajorityElement([2,2,1,1,1,2,2,1,1]));
+Console.WriteLine(r.FindMaxAverage([0,4,0,3,2],  1));
 
