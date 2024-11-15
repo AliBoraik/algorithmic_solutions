@@ -2,7 +2,7 @@
 
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new MaxNumberVowelsSubstringGivenLength();
+var r = new MaxConsecutiveOnes();
 
-Console.WriteLine(r.MaxVowels("abciiidef" , 3));
+Console.WriteLine(r.LongestOnes([0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1],  3));
 
