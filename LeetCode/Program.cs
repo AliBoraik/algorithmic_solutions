@@ -2,7 +2,7 @@
 
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new LongestSubarrayAfterDeletingOneElement();
+var r = new FindPivotIndex();
 
-Console.WriteLine(r.LongestSubarray([0,1,1,1,0,1,1,0,1]));
+Console.WriteLine(r.PivotIndex([1,7,3,6,5,6]));
 
