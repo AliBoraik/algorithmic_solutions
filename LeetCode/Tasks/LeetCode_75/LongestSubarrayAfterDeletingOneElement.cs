@@ -12,22 +12,19 @@ public class LongestSubarrayAfterDeletingOneElement
         int prevWindow = 0;
         int currWindow = 0;
         int maxLength = 0;
-        
-        for (int i = 0; i < nums.Length; i++) {
-            if (nums[i] == 0) {
+        foreach (var num in nums)
+        {
+            if (num == 0)
+            {
                 maxLength = Math.Max(maxLength, prevWindow + currWindow);
                 prevWindow = currWindow;
                 currWindow = 0;
-            } else {
-                currWindow++;
             }
+            else
+                currWindow++;
         }
-
-        if (currWindow == nums.Length) {
+        if (currWindow == nums.Length)
             return currWindow - 1;
-        }
-
-        maxLength = Math.Max(maxLength, prevWindow + currWindow);
-        return maxLength;
+        return Math.Max(maxLength, prevWindow + currWindow);
     }
 }
