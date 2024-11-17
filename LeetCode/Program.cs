@@ -3,6 +3,6 @@
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new IsomorphicStrings();
+var r = new ContainsDuplicateElement();
 
-Console.WriteLine(r.IsIsomorphic(  "paper",  "title"));
+Console.WriteLine(r.ContainsDuplicate(  [1,2,3,1]));
