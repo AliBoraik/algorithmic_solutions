@@ -3,6 +3,6 @@
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new ContainsDuplicateElement();
+var r = new ContainsDuplicateIi();
 
-Console.WriteLine(r.ContainsDuplicate(  [1,2,3,1]));
+Console.WriteLine(r.ContainsNearbyDuplicate( [1,0,1,1], 1));
