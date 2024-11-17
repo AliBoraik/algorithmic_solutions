@@ -2,7 +2,16 @@
 
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new FindPivotIndex();
+var r = new FindDifferenceTwoArrays();
 
-Console.WriteLine(r.PivotIndex([1,7,3,6,5,6]));
+var t = r.FindDifference([1,2,3,3],  [1,1,2,2]);
+
+foreach (var intse in t)
+{
+    foreach (var i in intse)
+    {
+        Console.Write(i+", ");
+    }
+    Console.WriteLine();
+}
 
