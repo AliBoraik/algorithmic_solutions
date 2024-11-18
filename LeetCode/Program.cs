@@ -3,6 +3,6 @@
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new ContainsDuplicateIi();
+var r = new MissingNumberTask();
 
-Console.WriteLine(r.ContainsNearbyDuplicate( [1,0,1,1], 1));
+Console.WriteLine(r.MissingNumber( [1]));
