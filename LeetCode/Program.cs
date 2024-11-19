@@ -3,6 +3,6 @@
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new EqualRowAndColumnPairs();
+var r = new RansomNote();
 
-Console.WriteLine(r.EqualPairs( [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]));
+Console.WriteLine(r.CanConstruct(  "aa", "b"));
