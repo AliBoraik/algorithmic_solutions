@@ -3,6 +3,6 @@
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new RansomNote();
+var r = new RemovingStarsFromString();
 
-Console.WriteLine(r.CanConstruct(  "aa", "b"));
+Console.WriteLine(r.RemoveStars(  "leet**cod*e"));
