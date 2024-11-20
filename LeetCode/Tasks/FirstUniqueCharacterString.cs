@@ -7,14 +7,14 @@ public class FirstUniqueCharacterString
      */
     public int FirstUniqChar(string s)
     {
-        var cons = new int[26];
+        var frequency = new int[26];
         foreach (var ch in s)
         {
-            cons[ch - 'a']++;
+            frequency[ch - 'a']++;
         }
         for (int i = 0; i < s.Length; i++)
         {
-            if (cons[s[i] - 'a'] == 1)
+            if (frequency[s[i] - 'a'] == 1)
                 return i;
         }
         return -1;
