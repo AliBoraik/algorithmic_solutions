@@ -3,6 +3,6 @@
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new RemovingStarsFromString();
+var r = new AsteroidCollisionTask();
 
-Console.WriteLine(r.RemoveStars(  "leet**cod*e"));
+Console.WriteLine(r.AsteroidCollision ([-2,-1,1,2]).Length);
