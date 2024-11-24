@@ -3,6 +3,11 @@
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new AsteroidCollisionTask();
+var r = new RecentCounter();
 
-Console.WriteLine(r.AsteroidCollision ([-2,-1,1,2]).Length);
+Console.WriteLine(r.Ping(1));
+Console.WriteLine(r.Ping(100));
+
+var rr = r.Ping(3001);
+
+Console.WriteLine(r.Ping(3002));
