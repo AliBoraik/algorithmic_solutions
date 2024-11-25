@@ -3,11 +3,7 @@
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new RecentCounter();
+var r = new Dota2Senate();
 
-Console.WriteLine(r.Ping(1));
-Console.WriteLine(r.Ping(100));
+Console.WriteLine(r.PredictPartyVictory("RDDD"));
 
-var rr = r.Ping(3001);
-
-Console.WriteLine(r.Ping(3002));
