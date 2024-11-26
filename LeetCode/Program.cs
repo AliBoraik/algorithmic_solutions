@@ -4,7 +4,7 @@ using LeetCode.Models;
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new NTreePreorderTraversal();
+var r = new NTreePostorderTraversal();
 
 var root = new Node
 {
@@ -33,7 +33,7 @@ var root = new Node
     }
 };
 
-var rr = r.Preorder(root);
+var rr = r.Postorder(root);
 
 foreach (var VARIABLE in rr)
 {
