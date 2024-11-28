@@ -4,39 +4,30 @@ using LeetCode.Models;
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new NTreePostorderTraversal();
+var r = new RemoveLinkedListElements();
 
-var root = new Node
+ListNode head = new ListNode()
 {
     val = 1,
-    children = new List<Node>
+    next = new ListNode
     {
-        new Node
+        val = 2,
+        next = new ListNode
         {
             val = 3,
-            children = new List<Node>()
+            next = new ListNode
             {
-                new Node()
-                {
-                    val = 5
-                },
-                new Node
-                {
-                    val = 6
-                }
+                val = 4
             }
-        },
-        new Node()
-        {
-            val = 2
         }
     }
 };
 
-var rr = r.Postorder(root);
+var rr = r.RemoveElements(head , 2);
 
-foreach (var VARIABLE in rr)
+while (rr != null)
 {
-    Console.WriteLine(VARIABLE + "- ");
+    Console.WriteLine(rr.val);
+    rr = rr.next;
 }
 
