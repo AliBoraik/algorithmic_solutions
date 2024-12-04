@@ -4,7 +4,40 @@ using LeetCode.Models;
 using LeetCode.Tasks;
 using LeetCode.Tasks.LeetCode_75;
 
-var r = new BackspaceStringCompare();
+var r = new DeleteMiddleNodeLinkedList();
 
-var rr = r.BackspaceCompare( "a##c", "#a#c");
-Console.WriteLine(rr);
+var head = new ListNode
+{
+    val = 1,
+    next = new ListNode
+    {
+        val = 3,
+        next = new ListNode
+        {
+            val = 4,
+            next = new ListNode
+            {
+                val = 7,
+                next = new ListNode
+                {
+                    val = 1,
+                    next = new ListNode
+                    {
+                        val = 2,
+                        next = new ListNode
+                        {
+                            val = 6
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+
+var result = r.DeleteMiddle(head);
+while (result != null)
+{
+    Console.WriteLine(result.val);
+    result = result.next;
+}
