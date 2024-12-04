@@ -12,17 +12,25 @@ public class DeleteMiddleNodeLinkedList
        
        For n = 1, 2, 3, 4, and 5, the middle nodes are 0, 1, 1, 2, and 2, respectively.
      */
-    public ListNode DeleteMiddle(ListNode head) {
-        if(head == null)return null;
-        ListNode prev = new ListNode();
-        prev.next = head;
-        ListNode slow = prev;
+    
+    //input ==  1 , 2, 3, 4, 5 
+    
+    public ListNode DeleteMiddle(ListNode head)
+    {
+        if (head == null) return null;
+        ListNode pref = new ListNode
+        {
+            next = head
+        };
+        ListNode slow = pref;
         ListNode fast = head;
-        while(fast != null && fast.next != null){
+        while (slow != null && fast.next != null)
+        {
             slow = slow.next;
             fast = fast.next.next;
         }
+
         slow.next = slow.next.next;
-        return prev.next;
+        return pref.next;
     }
 }

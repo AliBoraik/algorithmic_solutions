@@ -11,24 +11,16 @@ var head = new ListNode
     val = 1,
     next = new ListNode
     {
-        val = 3,
+        val = 2,
         next = new ListNode
         {
-            val = 4,
+            val = 3,
             next = new ListNode
             {
-                val = 7,
+                val = 4,
                 next = new ListNode
                 {
-                    val = 1,
-                    next = new ListNode
-                    {
-                        val = 2,
-                        next = new ListNode
-                        {
-                            val = 6
-                        }
-                    }
+                    val = 5,
                 }
             }
         }
